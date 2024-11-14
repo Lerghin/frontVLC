@@ -8,6 +8,7 @@ baseURL: 'http://localhost:5000/api',
 
 })
 export const getChannels=() =>api.get('/channels')
+export const getAstraChannels=() =>api.get('/astra')
 export const addChannel = async (newChannel) => {
     try {
       const response = await api.post('/channels', newChannel);

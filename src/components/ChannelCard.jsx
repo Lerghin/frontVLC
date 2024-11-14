@@ -7,8 +7,10 @@ const ChannelCard = ({ channel }) => {
   return (
     <div className="card shadow-lg rounded-3 mb-4">
       <div className="card-body">
-        <h4 className="card-title text-center">{channel.name}</h4>
-        <p className="card-text text-muted text-center">{channel.url}</p>
+        <h4 className="card-title text-center  ">Nombre del Canal: {channel.name}</h4>
+        <p className="card-text text-muted text-center font-weight-bold"> URL: <span>{channel.url}</span> </p>
+        <p className="card-text text-muted text-center font-weight-bold"> Penta Number: <span>{channel.pentaNummber}</span> </p>
+    
         
         {/* ReactPlayer for streaming the channel */}
         <div className="player-wrapper">

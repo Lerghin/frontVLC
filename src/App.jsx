@@ -1,7 +1,7 @@
 
 import './App.css'
 import ChannelProvider from './context/ChannelContext'
-import VolumeControl from './components/VolumeControl'
+
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <ChannelProvider>
     <div className='App'>
 
-        <VolumeControl/>
+     
         <HomePage />
 
     </div>

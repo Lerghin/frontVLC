@@ -1,7 +1,9 @@
 import ChannelCard from "./ChannelCard"
 
 
+
 const ChannelList = ({channels}) => {
+
   return (
     <div className='row'>
         
@@ -18,3 +20,4 @@ const ChannelList = ({channels}) => {
 }
 
 export default ChannelList
+
