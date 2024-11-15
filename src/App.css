@@ -1,6 +1,7 @@
 /* Root Styles */
 #root {
   max-width: 1280px;
+ height: 2000px;;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -47,11 +48,13 @@ background-color: #111!important;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card:hover {
-  transform: translateY(-10px); /* Elevar la tarjeta al pasar el ratón */
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Aumentar sombra al hacer hover */
-}
+.edit-delete{
 
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* Card Title */
 .card-title {
   color: #ffcc00; /* Amarillo para el título */

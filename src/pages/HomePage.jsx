@@ -8,7 +8,13 @@ const HomePage = () => {
     const { channels, setChannels } = useChannelContext();
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [search, setSearch] = useState("");
+    const [results, setResults] = useState([]);
+    const [sortedDoctors, setSortedDoctors] = useState([]);
 
+
+
+    
     useEffect(() => {
         const fetchChannels = async () => {
             try {
@@ -28,10 +34,14 @@ const HomePage = () => {
         fetchChannels();
     }, [setChannels]);
 
+
     return (
         <div className='container'>
             <div className='title'>
                 <h1 className='btn-astra'>Fibex Penta</h1>
+                <div>
+             
+                </div>
              
                 <AddChannelForm className='btn-astra add-channel' />
             </div>
